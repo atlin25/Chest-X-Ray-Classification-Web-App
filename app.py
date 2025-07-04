@@ -14,8 +14,8 @@ import base64
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 
-genai.configure(api_key="AIzaSyBl7YflSQYesVVXqzlYRfoGO0owfWAhgrs")
-gemini_model = genai.GenerativeModel(model_name="models/gemini-1.5-flash") # pro if i have the quota for it
+genai.configure(api_key="API_Key")
+gemini_model = genai.GenerativeModel(model_name="models/gemini-1.5-flash") # pro if you have the quota for it
 
 CLASS_LABELS = [
     "Aortic enlargement", "Atelectasis", "Calcification", "Cardiomegaly",
@@ -92,10 +92,8 @@ def classify():
         # Extract base64 part (remove prefix if present)
         header, encoded = data['image_base64'].split(',', 1) if ',' in data['image_base64'] else (None, data['image_base64'])
         
-        # Fix base64 padding here:
         encoded = fix_base64_padding(encoded)
 
-        # Now decode safely
         image_bytes = base64.b64decode(encoded)
 
         input_tensor = preprocess_image(image_bytes)
