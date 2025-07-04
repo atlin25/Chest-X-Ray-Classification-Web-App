@@ -28,5 +28,18 @@ The project requires the following Python libraries (tested versions):
    ```bash
    git clone https://github.com/<atlin25>/<Chest-X-ray-Classification-Web-App>.git
    cd <Chest-X-ray-Classification-Web-App>
+2. Backend Setup
+   - python3 -m venv venv
+   - source venv/bin/activate # On Windows: venv\Scripts\activate
+3. Frontend Setup
+   - cd frontend
+   - npm install
+4. To Run App
+   - source venv/bin/activate
+   - cd backend
+   - python app.py
+   # In another Session
+   - cd frontend
+   - npm start
 
-   
+
