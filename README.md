@@ -1,2 +1,32 @@
-# Chest-X-Ray-Classification-Web-App
-This project develops a CNN model for classifying chest X-ray images to detect abnormalities using the VinBigData Chest X-ray Abnormalities Detection dataset from Kaggle. The model, achieving 80% accuracy, is integrated into a web application for user interaction as well. Limitations including class imbalance, dataset validity, and GPU constraints.
+# Chest X-Ray Classification Web App
+A deep learning model for classifying chest X-ray images to detect abnormalities using the [VinBigData Chest X-ray Abnormalities Detection dataset](https://www.kaggle.com/competitions/vinbigdata-chest-xray-abnormalities-detection).
+
+## Overview
+This project develops a convolutional neural network (CNN) to classify chest X-ray images for 14 abnormalities, aiming to eventually support medical diagnostics. Inspired by a personal connection (my sister, a doctor), the model targets 99% accuracy but currently achieves ~80% due to class imbalance, dataset size, and GPU limitations. Key features include:
+- Multi-label classification using TensorFlow/Keras with focal loss and data augmentation.
+- Integration with Gemini Pro API for user-friendly prediction summaries.
+- Flask/React web app for image uploads and result visualization.
+
+## Installation and Setup
+### Prerequisites
+- Python 3.10
+- Git
+
+### Dependencies
+The project requires the following Python libraries (tested versions):
+- `tensorflow==2.11.0`
+- `numpy==1.26.4`
+- `pandas==2.2.3`
+- `pydicom==3.0.1`
+- `scikit-learn==1.6.1`
+- `scikit-image==0.25.2`
+- `pillow==11.2.1`
+- `google-generativeai==0.8.5`
+
+### Steps
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/<atlin25>/<Chest-X-ray-Classification-Web-App>.git
+   cd <Chest-X-ray-Classification-Web-App>
+
+   
