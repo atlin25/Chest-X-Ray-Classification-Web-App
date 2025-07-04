@@ -38,7 +38,7 @@ The project requires the following Python libraries (tested versions):
    - source venv/bin/activate
    - cd backend
    - python app.py
-   # In another Session
+5. In another Session
    - cd frontend
    - npm start
 
